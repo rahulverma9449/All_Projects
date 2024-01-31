@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #212121;
+  color: #fff;
+
+ }
+ 
+ .login-container {
+  width: 300px;
+  padding: 20px;
+  margin: 100px auto;
+  background-color: #333;
+  position: absolute;
+  right: 150px;
+  border-radius: 5px;
+  background-image: url('https://img.freepik.com/premium-vector/futuristic-background-style_23-2148503794.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703980800&semt=ais');
+ }
+ 
+ h1 {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+ 
+ label {
+  display: block;
+  margin-bottom: 5px;
+ }
+ 
+ input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #444;
+ }
+ 
+ button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #669900;
+  cursor: pointer;
+ }
+ 
+ button:hover {
+  background-color: #9c1bec;
+ }
+ 
+ a {
+  color: #669900;
+  text-decoration: none;
+ }
+ 
+ a:hover {
+  text-decoration: underline;
+ }
+
+ body{
+  overflow:hidden;
+  background:#ACD1E8;
+  background:-webkit-linear-gradient(top,#ACD1E8 0%,#fff 100%) no-repeat;
+  background:-moz-linear-gradient(top,#ACD1E8 0%,#fff 100%) no-repeat;
+  background:-o-linear-gradient(top,#ACD1E8 0%,#fff 100%) no-repeat;
+  background-image: url('https://images.pexels.com/photos/304875/pexels-photo-304875.jpeg?cs=srgb&dl=pexels-veeterzy-304875.jpg&fm=jpg');
+
+}
+#plane {
+  position:relative;
+  width:500px;
+  top:250px;
+  height:150px;
+}
+.body {
+   width:500px;
+   position:relative;
+}
+.body:after,.lwing:after,.rwing:after {
+   content:"";
+   position:absolute;
+   /* background:#e0dcd9; */
+   background-image: url(firefox.png), url(bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+   width:400px;
+   height:70px;  
+   padding:5px;
+   border-bottom-left-radius:100%;
+   border-top-left-radius:100%;
+}
+
+.face:before {
+   content:"";
+   position:absolute;
+   right:-65px;
+   width:155px;
+   height:80px;
+   background-image: url(firefox.png), url(bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));   
+   border-bottom-right-radius:10%;
+   border-top-right-radius:95%;                    
+}
+.rwing:after {
+   bottom:-165px;
+   height:150px;
+   width:450px;
+   left:40px;
+  -moz-transform:rotate3d(1,0,1,270deg);
+  -webkit-transform:rotate3d(1,0,1,270deg);
+  -ms-transform:rotate3d(1,0,1,270deg);
+  transform:rotate3d(1,0,1,270deg);
+}
+.lwing:after{
+   top:-213px;
+   right:15px;
+   height:150px;
+   -moz-transform:rotate3d(1,0,1,85deg);
+   -webkit-transform:rotate3d(1,0,1,86deg);
+   -ms-transform:rotate3d(1,0,1,85deg);
+   transform:rotate3d(1,0,1,85deg);
+}
+.name {
+ -webkit-transform:rotate(52deg);
+ font-size:4em;
+ z-index:5;
+ font-style:italic;
+ color:rgb(221, 7, 7);
+ position:absolute;
+ top:-160px;
+ right:115px;
+ text-shadow:inset 5px 5px 5px green;
+}
+.tail:after {
+   content:"";
+   position:absolute;
+   width: 0;
+   top:-35px;
+   left:-15px;
+   height: 0;
+   border-style: solid;
+   border-width: 0px 40px 80px 80px;
+   border-color: transparent transparent #f2f4f1 #cc5200;
+   -moz-transform:rotate3d(1,0,1,95deg);
+   -webkit-transform:rotate3d(1,0,1,95deg);
+   -ms-transform:rotate3d(1,0,1,95deg);
+   transform:rotate3d(1,0,1,95deg);
+}
+.fan:after {
+   content:"";
+}
+.window {
+   position:absolute;
+   width:5px;
+   height:5px;
+   background:white;
+}
+.window {
+   content:"";
+   width:15px;    
+   right:35px;
+   top:35px;
+   padding-right:25px;
+   padding-bottom:15px;
+   z-index:1;        
+}
+.window:first-child{border-radius:0 90% 0 0;}
+.window:last-child{border-radius:90% 0 0 0;margin-right:300px;}
+.window:nth-child(2) {
+   margin-right:50px;
+}
+.window:nth-child(3) {
+   margin-right:100px;
+}
+.window:nth-child(4) {
+   margin-right:150px;
+}
+.window:nth-child(5) {
+   margin-right:200px;
+}
+.window:nth-child(6) {
+   margin-right:250px;
+}
+#plane {
+ -webkit-animation:move 10s infinite;
+ -moz-animation:move 10s infinte;
+ -ms-animation:move 10s infinite;
+ animation:move 10s infinte;
+ 
+}
+@-webkit-keyframes move {
+ from {left:-5000px;}
+ to{left:2000px;}
+}
+@-moz-keyframes move {
+ from {left:-5000px;}
+ to{left:2000px;}
+}
+@-ms-keyframes move {
+ from {left:-5000px;}
+ to{left:2000px;}
+}
+@keyframes move {
+ from {left:-5000px;}
+ to{left:2000px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
